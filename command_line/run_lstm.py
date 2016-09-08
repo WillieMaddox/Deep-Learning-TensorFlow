@@ -16,9 +16,10 @@ flags = tf.app.flags
 FLAGS = flags.FLAGS
 
 # Global configuration
-flags.DEFINE_string('dataset', 'mnist', 'Which dataset to use. ["ptb"]')
+flags.DEFINE_string('dataset', 'ptb', 'Which dataset to use. ["ptb"]')
 flags.DEFINE_string('ptb_dir', '', 'Path to the ptb dataset directory.')
 flags.DEFINE_string('model_name', 'lstm', 'Model name.')
+flags.DEFINE_string('main_dir', 'lstm/', 'Directory to store data relative to the algorithm.')
 flags.DEFINE_integer('seed', -1, 'Seed for the random generators (>= 0).\
     Useful for testing hyperparameters.')
 
